@@ -52,16 +52,16 @@
 
 (:goal 
         (and 
-		(has-color p1 p1_base black)
+		;(has-color p1 p1_base black)
 		(has-color p1 p1_ring1 blue)
-		(has-color p1 p1_ring2 green)
-		(has-color p1 p1_ring3 blue)
-		(has-color p1 p1_cap black)
-		(has-color p2 p2_base red)
+		;(has-color p1 p1_ring2 green)
+		;(has-color p1 p1_ring3 blue)
+		;(has-color p1 p1_cap black)
+		;(has-color p2 p2_base red)
 		(has-color p2 p2_ring1 orange)
-		(has-color p2 p2_ring2 yellow)
-		(has-color p2 p2_ring3 blue)
-		(has-color p2 p2_cap white)	
+		;(has-color p2 p2_ring2 yellow)
+		;(has-color p2 p2_ring3 blue)
+		;(has-color p2 p2_cap white)	
         )
     
 )
