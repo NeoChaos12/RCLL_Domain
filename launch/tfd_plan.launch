@@ -1,0 +1,10 @@
+<launch>
+
+   <arg name="domain" default="$(find rcll_domain)/pddl/domain_basic_with_loading.pddl" />
+   <arg name="problem" default="$(find rcll_domain)/pddl/p02-test.pddl" />
+
+   <node pkg="tfd_modules" type="tfd_plan" name="tfd_plan" args="$(arg domain) $(arg problem)" required="true">
+      <rosparam command="load" file="$(find tfd_modules)/config/tfd_modules_params.yaml" />
+   </node>
+
+</launch>

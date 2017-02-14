@@ -1,0 +1,6719 @@
+0
+begin_variables
+77
+var0 2 -1
+var1 2 -1
+var2 2 -1
+var3 2 -1
+var4 2 -1
+var5 2 -1
+var6 2 -1
+var7 2 -1
+var8 2 -1
+var9 2 -1
+var10 2 -1
+var11 2 -1
+var12 2 -1
+var13 2 -1
+var14 2 -1
+var15 2 -1
+var16 2 -1
+var17 2 -1
+var18 2 -1
+var19 2 -1
+var20 2 -1
+var21 2 -1
+var22 2 -1
+var23 2 -1
+var24 2 -1
+var25 2 -1
+var26 2 -1
+var27 2 -1
+var28 2 -1
+var29 2 -1
+var30 2 -1
+var31 2 -1
+var32 2 -1
+var33 2 -1
+var34 2 -1
+var35 2 -1
+var36 2 -1
+var37 2 -1
+var38 2 -1
+var39 2 -1
+var40 2 -1
+var41 2 -1
+var42 2 -1
+var43 2 -1
+var44 2 -1
+var45 2 -1
+var46 2 -1
+var47 2 -1
+var48 2 -1
+var49 2 -1
+var50 2 -1
+var51 2 -1
+var52 2 -1
+var53 2 -1
+var54 2 -1
+var55 2 -1
+var56 2 -1
+var57 2 -1
+var58 2 -1
+var59 2 -1
+var60 2 -1
+var61 2 -1
+var62 2 -1
+var63 2 -1
+var64 2 -1
+var65 2 -1
+var66 2 -1
+var67 2 -1
+var68 2 -1
+var69 2 -1
+var70 2 -1
+var71 2 -1
+var72 2 -1
+var73 2 -1
+var74 -1 -1
+var75 -1 -1
+var76 -1 -1
+end_variables
+begin_oplinits
+0
+end_oplinits
+begin_objects
+32
+base_color black
+base_color silver
+base_color red
+ring_color blue
+ring_color orange
+ring_color yellow
+ring_color green
+cap_color black
+cap_color white
+bs m_bs
+rs1 m_rs1
+rs2 m_rs2
+cs1 m_cs1
+cs2 m_cs2
+product p1
+product p2
+product p3
+base p1_base
+ring p1_ring1
+ring p1_ring2
+ring p1_ring3
+cap p1_cap
+base p2_base
+ring p2_ring1
+ring p2_ring2
+ring p2_ring3
+cap p2_cap
+base p3_base
+ring p3_ring1
+ring p3_ring2
+ring p3_ring3
+cap p3_cap
+end_objects
+begin_pddl_translation
+74
+being-processed 1 p1 0 0
+being-processed 1 p2 1 0
+being-processed 1 p3 2 0
+busy 1 m_bs 3 0
+busy 1 m_cs1 4 0
+busy 1 m_cs2 5 0
+busy 1 m_rs1 6 0
+busy 1 m_rs2 7 0
+has-color 3 p1 p1_base black 8 0
+has-color 3 p1 p1_base red 9 0
+has-color 3 p1 p1_base silver 10 0
+has-color 3 p1 p1_cap black 11 0
+has-color 3 p1 p1_cap white 12 0
+has-color 3 p1 p1_ring1 blue 13 0
+has-color 3 p1 p1_ring1 green 14 0
+has-color 3 p1 p1_ring1 orange 15 0
+has-color 3 p1 p1_ring1 yellow 16 0
+has-color 3 p1 p1_ring2 blue 17 0
+has-color 3 p1 p1_ring2 green 18 0
+has-color 3 p1 p1_ring2 orange 19 0
+has-color 3 p1 p1_ring2 yellow 20 0
+has-color 3 p1 p1_ring3 blue 21 0
+has-color 3 p1 p1_ring3 green 22 0
+has-color 3 p1 p1_ring3 orange 23 0
+has-color 3 p1 p1_ring3 yellow 24 0
+has-color 3 p2 p2_base black 25 0
+has-color 3 p2 p2_base red 26 0
+has-color 3 p2 p2_base silver 27 0
+has-color 3 p2 p2_cap black 28 0
+has-color 3 p2 p2_cap white 29 0
+has-color 3 p2 p2_ring1 blue 30 0
+has-color 3 p2 p2_ring1 green 31 0
+has-color 3 p2 p2_ring1 orange 32 0
+has-color 3 p2 p2_ring1 yellow 33 0
+has-color 3 p2 p2_ring2 blue 34 0
+has-color 3 p2 p2_ring2 green 35 0
+has-color 3 p2 p2_ring2 orange 36 0
+has-color 3 p2 p2_ring2 yellow 37 0
+has-color 3 p2 p2_ring3 blue 38 0
+has-color 3 p2 p2_ring3 green 39 0
+has-color 3 p2 p2_ring3 orange 40 0
+has-color 3 p2 p2_ring3 yellow 41 0
+has-color 3 p3 p3_base black 42 0
+has-color 3 p3 p3_base red 43 0
+has-color 3 p3 p3_base silver 44 0
+has-color 3 p3 p3_cap black 45 0
+has-color 3 p3 p3_cap white 46 0
+has-color 3 p3 p3_ring1 blue 47 0
+has-color 3 p3 p3_ring1 green 48 0
+has-color 3 p3 p3_ring1 orange 49 0
+has-color 3 p3 p3_ring1 yellow 50 0
+has-color 3 p3 p3_ring2 blue 51 0
+has-color 3 p3 p3_ring2 green 52 0
+has-color 3 p3 p3_ring2 orange 53 0
+has-color 3 p3 p3_ring2 yellow 54 0
+has-color 3 p3 p3_ring3 blue 55 0
+has-color 3 p3 p3_ring3 green 56 0
+has-color 3 p3 p3_ring3 orange 57 0
+has-color 3 p3 p3_ring3 yellow 58 0
+is-empty 2 p1 p1_base 59 0
+is-empty 2 p1 p1_cap 60 0
+is-empty 2 p1 p1_ring1 61 0
+is-empty 2 p1 p1_ring2 62 0
+is-empty 2 p1 p1_ring3 63 0
+is-empty 2 p2 p2_base 64 0
+is-empty 2 p2 p2_cap 65 0
+is-empty 2 p2 p2_ring1 66 0
+is-empty 2 p2 p2_ring2 67 0
+is-empty 2 p2 p2_ring3 68 0
+is-empty 2 p3 p3_base 69 0
+is-empty 2 p3 p3_cap 70 0
+is-empty 2 p3 p3_ring1 71 0
+is-empty 2 p3 p3_ring2 72 0
+is-empty 2 p3 p3_ring3 73 0
+0
+end_pddl_translation
+begin_constant_facts
+6
+contains-color 2 m_cs1 black
+contains-color 2 m_cs2 white
+contains-color 2 m_rs1 blue
+contains-color 2 m_rs1 green
+contains-color 2 m_rs2 orange
+contains-color 2 m_rs2 yellow
+0
+end_constant_facts
+begin_modules
+0
+0
+0
+0
+0
+0
+0
+end_modules
+begin_state
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0.5
+0.75
+end_state
+begin_goal
+10
+8 0
+11 0
+13 0
+18 0
+21 0
+26 0
+29 0
+32 0
+37 0
+38 0
+end_goal
+93
+begin_operator
+mount-cap m_cs1 p1 p1_cap black
+0
+= 76
+1
+60 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+4 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+1
+60 0
+60 -1 1
+0
+0
+0
+11 -1 0
+0
+0
+1
+4 0
+4 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-cap m_cs1 p1 p1_cap white
+0
+= 76
+1
+60 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+4 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+1
+4 0
+4 0 1
+0
+0
+0
+12 -1 0
+0
+0
+1
+60 0
+60 -1 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-cap m_cs1 p2 p2_cap black
+0
+= 76
+1
+65 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+4 1 0
+4
+0
+0
+1
+4 0
+4 0 1
+0
+0
+0
+28 -1 0
+0
+0
+1
+65 0
+65 -1 1
+0
+0
+1
+1 0
+1 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-cap m_cs1 p2 p2_cap white
+0
+= 76
+1
+65 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+4 1 0
+4
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+4 0
+4 0 1
+0
+0
+0
+29 -1 0
+0
+0
+1
+65 0
+65 -1 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-cap m_cs1 p3 p3_cap black
+0
+= 76
+1
+70 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+4 1 0
+4
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+4 0
+4 0 1
+0
+0
+0
+45 -1 0
+0
+0
+1
+70 0
+70 -1 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-cap m_cs1 p3 p3_cap white
+0
+= 76
+1
+70 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+4 1 0
+4
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+4 0
+4 0 1
+0
+0
+1
+70 0
+70 -1 1
+0
+0
+0
+46 -1 0
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-cap m_cs2 p1 p1_cap black
+0
+= 76
+1
+60 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+5 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+0
+11 -1 0
+0
+0
+1
+60 0
+60 -1 1
+0
+0
+1
+5 0
+5 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-cap m_cs2 p1 p1_cap white
+0
+= 76
+1
+60 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+5 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+1
+60 0
+60 -1 1
+0
+0
+0
+12 -1 0
+0
+0
+1
+5 0
+5 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-cap m_cs2 p2 p2_cap black
+0
+= 76
+1
+65 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+5 1 0
+4
+0
+0
+1
+1 0
+1 0 1
+0
+0
+0
+28 -1 0
+0
+0
+1
+5 0
+5 0 1
+0
+0
+1
+65 0
+65 -1 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-cap m_cs2 p2 p2_cap white
+0
+= 76
+1
+65 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+5 1 0
+4
+0
+0
+1
+1 0
+1 0 1
+0
+0
+0
+29 -1 0
+0
+0
+1
+65 0
+65 -1 1
+0
+0
+1
+5 0
+5 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-cap m_cs2 p3 p3_cap black
+0
+= 76
+1
+70 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+5 1 0
+4
+0
+0
+1
+2 0
+2 0 1
+0
+0
+0
+45 -1 0
+0
+0
+1
+70 0
+70 -1 1
+0
+0
+1
+5 0
+5 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-cap m_cs2 p3 p3_cap white
+0
+= 76
+1
+70 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+5 1 0
+4
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+70 0
+70 -1 1
+0
+0
+1
+5 0
+5 0 1
+0
+0
+0
+46 -1 0
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p1 p1_ring1 blue
+0
+= 75
+1
+61 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+0
+13 -1 0
+0
+0
+1
+6 0
+6 0 1
+0
+0
+1
+61 0
+61 -1 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p1 p1_ring1 green
+0
+= 75
+1
+61 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+14 -1 0
+0
+0
+1
+61 0
+61 -1 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p1 p1_ring1 orange
+0
+= 75
+1
+61 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+1
+61 0
+61 -1 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+15 -1 0
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p1 p1_ring1 yellow
+0
+= 75
+1
+61 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+0
+16 -1 0
+0
+0
+1
+0 0
+0 0 1
+0
+0
+1
+61 0
+61 -1 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p1 p1_ring2 blue
+0
+= 75
+1
+62 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+0
+17 -1 0
+0
+0
+1
+62 0
+62 -1 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p1 p1_ring2 green
+0
+= 75
+1
+62 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+0
+18 -1 0
+0
+0
+1
+62 0
+62 -1 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p1 p1_ring2 orange
+0
+= 75
+1
+62 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+0
+19 -1 0
+0
+0
+1
+62 0
+62 -1 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p1 p1_ring2 yellow
+0
+= 75
+1
+62 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+0
+20 -1 0
+0
+0
+1
+62 0
+62 -1 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p1 p1_ring3 blue
+0
+= 75
+1
+63 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+0
+21 -1 0
+0
+0
+1
+6 0
+6 0 1
+0
+0
+1
+63 0
+63 -1 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p1 p1_ring3 green
+0
+= 75
+1
+63 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+22 -1 0
+0
+0
+1
+63 0
+63 -1 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p1 p1_ring3 orange
+0
+= 75
+1
+63 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+1
+63 0
+63 -1 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+23 -1 0
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p1 p1_ring3 yellow
+0
+= 75
+1
+63 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+0
+24 -1 0
+0
+0
+1
+0 0
+0 0 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+1
+63 0
+63 -1 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p2 p2_ring1 blue
+0
+= 75
+1
+66 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+66 0
+66 -1 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+30 -1 0
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p2 p2_ring1 green
+0
+= 75
+1
+66 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+66 0
+66 -1 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+31 -1 0
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p2 p2_ring1 orange
+0
+= 75
+1
+66 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+0
+32 -1 0
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+66 0
+66 -1 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p2 p2_ring1 yellow
+0
+= 75
+1
+66 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+0
+33 -1 0
+0
+0
+1
+66 0
+66 -1 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+1
+1 0
+1 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p2 p2_ring2 blue
+0
+= 75
+1
+67 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+1 0
+1 0 1
+0
+0
+0
+34 -1 0
+0
+0
+1
+67 0
+67 -1 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p2 p2_ring2 green
+0
+= 75
+1
+67 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+67 0
+67 -1 1
+0
+0
+0
+35 -1 0
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p2 p2_ring2 orange
+0
+= 75
+1
+67 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+67 0
+67 -1 1
+0
+0
+0
+36 -1 0
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p2 p2_ring2 yellow
+0
+= 75
+1
+67 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+67 0
+67 -1 1
+0
+0
+0
+37 -1 0
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p2 p2_ring3 blue
+0
+= 75
+1
+68 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+68 0
+68 -1 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+38 -1 0
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p2 p2_ring3 green
+0
+= 75
+1
+68 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+68 0
+68 -1 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+39 -1 0
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p2 p2_ring3 orange
+0
+= 75
+1
+68 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+0
+40 -1 0
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+68 0
+68 -1 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p2 p2_ring3 yellow
+0
+= 75
+1
+68 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+0
+41 -1 0
+0
+0
+1
+68 0
+68 -1 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+1
+1 0
+1 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p3 p3_ring1 blue
+0
+= 75
+1
+71 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+71 0
+71 -1 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+47 -1 0
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p3 p3_ring1 green
+0
+= 75
+1
+71 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+0
+48 -1 0
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+1
+71 0
+71 -1 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p3 p3_ring1 orange
+0
+= 75
+1
+71 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+0
+49 -1 0
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+1
+71 0
+71 -1 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p3 p3_ring1 yellow
+0
+= 75
+1
+71 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+0
+50 -1 0
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+1
+71 0
+71 -1 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p3 p3_ring2 blue
+0
+= 75
+1
+72 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+72 0
+72 -1 1
+0
+0
+1
+2 0
+2 0 1
+0
+0
+0
+51 -1 0
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p3 p3_ring2 green
+0
+= 75
+1
+72 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+72 0
+72 -1 1
+0
+0
+1
+2 0
+2 0 1
+0
+0
+0
+52 -1 0
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p3 p3_ring2 orange
+0
+= 75
+1
+72 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+72 0
+72 -1 1
+0
+0
+1
+2 0
+2 0 1
+0
+0
+0
+53 -1 0
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p3 p3_ring2 yellow
+0
+= 75
+1
+72 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+72 0
+72 -1 1
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+54 -1 0
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p3 p3_ring3 blue
+0
+= 75
+1
+73 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+73 0
+73 -1 1
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+55 -1 0
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p3 p3_ring3 green
+0
+= 75
+1
+73 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+0
+56 -1 0
+0
+0
+1
+73 0
+73 -1 1
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p3 p3_ring3 orange
+0
+= 75
+1
+73 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+0
+57 -1 0
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+1
+73 0
+73 -1 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs1 p3 p3_ring3 yellow
+0
+= 75
+1
+73 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+6 1 0
+4
+0
+0
+1
+73 0
+73 -1 1
+0
+0
+0
+58 -1 0
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+6 0
+6 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p1 p1_ring1 blue
+0
+= 75
+1
+61 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+1
+61 0
+61 -1 1
+0
+0
+0
+13 -1 0
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p1 p1_ring1 green
+0
+= 75
+1
+61 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+1
+61 0
+61 -1 1
+0
+0
+0
+14 -1 0
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p1 p1_ring1 orange
+0
+= 75
+1
+61 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+1
+61 0
+61 -1 1
+0
+0
+0
+15 -1 0
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p1 p1_ring1 yellow
+0
+= 75
+1
+61 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+0
+16 -1 0
+0
+0
+1
+0 0
+0 0 1
+0
+0
+1
+61 0
+61 -1 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p1 p1_ring2 blue
+0
+= 75
+1
+62 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+0
+17 -1 0
+0
+0
+1
+62 0
+62 -1 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p1 p1_ring2 green
+0
+= 75
+1
+62 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+0
+18 -1 0
+0
+0
+1
+62 0
+62 -1 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p1 p1_ring2 orange
+0
+= 75
+1
+62 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+0
+19 -1 0
+0
+0
+1
+62 0
+62 -1 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p1 p1_ring2 yellow
+0
+= 75
+1
+62 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+0
+20 -1 0
+0
+0
+1
+62 0
+62 -1 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p1 p1_ring3 blue
+0
+= 75
+1
+63 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+1
+63 0
+63 -1 1
+0
+0
+0
+21 -1 0
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p1 p1_ring3 green
+0
+= 75
+1
+63 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+1
+63 0
+63 -1 1
+0
+0
+0
+22 -1 0
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p1 p1_ring3 orange
+0
+= 75
+1
+63 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+1
+63 0
+63 -1 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+23 -1 0
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p1 p1_ring3 yellow
+0
+= 75
+1
+63 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+0
+24 -1 0
+0
+0
+1
+0 0
+0 0 1
+0
+0
+1
+63 0
+63 -1 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p2 p2_ring1 blue
+0
+= 75
+1
+66 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+66 0
+66 -1 1
+0
+0
+0
+30 -1 0
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p2 p2_ring1 green
+0
+= 75
+1
+66 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+66 0
+66 -1 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+31 -1 0
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p2 p2_ring1 orange
+0
+= 75
+1
+66 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+0
+32 -1 0
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+66 0
+66 -1 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p2 p2_ring1 yellow
+0
+= 75
+1
+66 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+0
+33 -1 0
+0
+0
+1
+66 0
+66 -1 1
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p2 p2_ring2 blue
+0
+= 75
+1
+67 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+1 0
+1 0 1
+0
+0
+0
+34 -1 0
+0
+0
+1
+67 0
+67 -1 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p2 p2_ring2 green
+0
+= 75
+1
+67 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+67 0
+67 -1 1
+0
+0
+0
+35 -1 0
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p2 p2_ring2 orange
+0
+= 75
+1
+67 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+67 0
+67 -1 1
+0
+0
+0
+36 -1 0
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p2 p2_ring2 yellow
+0
+= 75
+1
+67 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+67 0
+67 -1 1
+0
+0
+0
+37 -1 0
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p2 p2_ring3 blue
+0
+= 75
+1
+68 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+68 0
+68 -1 1
+0
+0
+0
+38 -1 0
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p2 p2_ring3 green
+0
+= 75
+1
+68 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+1
+68 0
+68 -1 1
+0
+0
+0
+39 -1 0
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p2 p2_ring3 orange
+0
+= 75
+1
+68 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+0
+40 -1 0
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+68 0
+68 -1 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p2 p2_ring3 yellow
+0
+= 75
+1
+68 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+68 0
+68 -1 1
+0
+0
+0
+41 -1 0
+0
+0
+1
+1 0
+1 0 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p3 p3_ring1 blue
+0
+= 75
+1
+71 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+71 0
+71 -1 1
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+47 -1 0
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p3 p3_ring1 green
+0
+= 75
+1
+71 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+0
+48 -1 0
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+71 0
+71 -1 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p3 p3_ring1 orange
+0
+= 75
+1
+71 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+0
+49 -1 0
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+71 0
+71 -1 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p3 p3_ring1 yellow
+0
+= 75
+1
+71 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+0
+50 -1 0
+0
+0
+1
+71 0
+71 -1 1
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p3 p3_ring2 blue
+0
+= 75
+1
+72 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+72 0
+72 -1 1
+0
+0
+1
+2 0
+2 0 1
+0
+0
+0
+51 -1 0
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p3 p3_ring2 green
+0
+= 75
+1
+72 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+72 0
+72 -1 1
+0
+0
+1
+2 0
+2 0 1
+0
+0
+0
+52 -1 0
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p3 p3_ring2 orange
+0
+= 75
+1
+72 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+72 0
+72 -1 1
+0
+0
+1
+2 0
+2 0 1
+0
+0
+0
+53 -1 0
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p3 p3_ring2 yellow
+0
+= 75
+1
+72 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+72 0
+72 -1 1
+0
+0
+1
+2 0
+2 0 1
+0
+0
+0
+54 -1 0
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p3 p3_ring3 blue
+0
+= 75
+1
+73 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+73 0
+73 -1 1
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+55 -1 0
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p3 p3_ring3 green
+0
+= 75
+1
+73 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+0
+56 -1 0
+0
+0
+1
+73 0
+73 -1 1
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p3 p3_ring3 orange
+0
+= 75
+1
+73 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+0
+57 -1 0
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+73 0
+73 -1 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+mount-ring m_rs2 p3 p3_ring3 yellow
+0
+= 75
+1
+73 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+7 1 0
+4
+0
+0
+1
+73 0
+73 -1 1
+0
+0
+0
+58 -1 0
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+7 0
+7 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+retrieve-base m_bs p1 p1_base black
+0
+= 74
+1
+59 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+3 1 0
+4
+0
+0
+0
+8 -1 0
+0
+0
+1
+0 0
+0 0 1
+0
+0
+1
+3 0
+3 0 1
+0
+0
+1
+59 0
+59 -1 1
+0
+0
+0
+0
+end_operator
+begin_operator
+retrieve-base m_bs p1 p1_base red
+0
+= 74
+1
+59 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+3 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+0
+9 -1 0
+0
+0
+1
+3 0
+3 0 1
+0
+0
+1
+59 0
+59 -1 1
+0
+0
+0
+0
+end_operator
+begin_operator
+retrieve-base m_bs p1 p1_base silver
+0
+= 74
+1
+59 0
+0
+0
+2
+0
+0
+0
+0 1 0
+0
+0
+0
+3 1 0
+4
+0
+0
+1
+0 0
+0 0 1
+0
+0
+1
+59 0
+59 -1 1
+0
+0
+0
+10 -1 0
+0
+0
+1
+3 0
+3 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+retrieve-base m_bs p2 p2_base black
+0
+= 74
+1
+64 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+3 1 0
+4
+0
+0
+1
+64 0
+64 -1 1
+0
+0
+0
+25 -1 0
+0
+0
+1
+3 0
+3 0 1
+0
+0
+1
+1 0
+1 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+retrieve-base m_bs p2 p2_base red
+0
+= 74
+1
+64 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+3 1 0
+4
+0
+0
+1
+64 0
+64 -1 1
+0
+0
+1
+1 0
+1 0 1
+0
+0
+0
+26 -1 0
+0
+0
+1
+3 0
+3 0 1
+0
+0
+0
+0
+end_operator
+begin_operator
+retrieve-base m_bs p2 p2_base silver
+0
+= 74
+1
+64 0
+0
+0
+2
+0
+0
+0
+1 1 0
+0
+0
+0
+3 1 0
+4
+0
+0
+1
+3 0
+3 0 1
+0
+0
+1
+1 0
+1 0 1
+0
+0
+0
+27 -1 0
+0
+0
+1
+64 0
+64 -1 1
+0
+0
+0
+0
+end_operator
+begin_operator
+retrieve-base m_bs p3 p3_base black
+0
+= 74
+1
+69 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+3 1 0
+4
+0
+0
+0
+42 -1 0
+0
+0
+1
+3 0
+3 0 1
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+69 0
+69 -1 1
+0
+0
+0
+0
+end_operator
+begin_operator
+retrieve-base m_bs p3 p3_base red
+0
+= 74
+1
+69 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+3 1 0
+4
+0
+0
+1
+3 0
+3 0 1
+0
+0
+1
+2 0
+2 0 1
+0
+0
+0
+43 -1 0
+0
+0
+1
+69 0
+69 -1 1
+0
+0
+0
+0
+end_operator
+begin_operator
+retrieve-base m_bs p3 p3_base silver
+0
+= 74
+1
+69 0
+0
+0
+2
+0
+0
+0
+2 1 0
+0
+0
+0
+3 1 0
+4
+0
+0
+1
+2 0
+2 0 1
+0
+0
+1
+3 0
+3 0 1
+0
+0
+0
+44 -1 0
+0
+0
+1
+69 0
+69 -1 1
+0
+0
+0
+0
+end_operator
+0
+0
+begin_SG
+switch 0
+check 0
+check 0
+switch 3
+check 0
+check 0
+switch 59
+check 0
+check 3
+84
+85
+86
+check 0
+check 0
+switch 4
+check 0
+check 0
+switch 60
+check 0
+check 2
+0
+1
+check 0
+check 0
+switch 5
+check 0
+check 0
+switch 60
+check 0
+check 2
+6
+7
+check 0
+check 0
+switch 6
+check 0
+check 0
+switch 61
+check 0
+check 4
+12
+13
+14
+15
+check 0
+switch 62
+check 0
+check 4
+16
+17
+18
+19
+check 0
+switch 63
+check 0
+check 4
+20
+21
+22
+23
+check 0
+check 0
+switch 7
+check 0
+check 0
+switch 61
+check 0
+check 4
+48
+49
+50
+51
+check 0
+switch 62
+check 0
+check 4
+52
+53
+54
+55
+check 0
+switch 63
+check 0
+check 4
+56
+57
+58
+59
+check 0
+check 0
+check 0
+switch 1
+check 0
+check 0
+switch 3
+check 0
+check 0
+switch 64
+check 0
+check 3
+87
+88
+89
+check 0
+check 0
+switch 4
+check 0
+check 0
+switch 65
+check 0
+check 2
+2
+3
+check 0
+check 0
+switch 5
+check 0
+check 0
+switch 65
+check 0
+check 2
+8
+9
+check 0
+check 0
+switch 6
+check 0
+check 0
+switch 66
+check 0
+check 4
+24
+25
+26
+27
+check 0
+switch 67
+check 0
+check 4
+28
+29
+30
+31
+check 0
+switch 68
+check 0
+check 4
+32
+33
+34
+35
+check 0
+check 0
+switch 7
+check 0
+check 0
+switch 66
+check 0
+check 4
+60
+61
+62
+63
+check 0
+switch 67
+check 0
+check 4
+64
+65
+66
+67
+check 0
+switch 68
+check 0
+check 4
+68
+69
+70
+71
+check 0
+check 0
+check 0
+switch 2
+check 0
+check 0
+switch 3
+check 0
+check 0
+switch 69
+check 0
+check 3
+90
+91
+92
+check 0
+check 0
+switch 4
+check 0
+check 0
+switch 70
+check 0
+check 2
+4
+5
+check 0
+check 0
+switch 5
+check 0
+check 0
+switch 70
+check 0
+check 2
+10
+11
+check 0
+check 0
+switch 6
+check 0
+check 0
+switch 71
+check 0
+check 4
+36
+37
+38
+39
+check 0
+switch 72
+check 0
+check 4
+40
+41
+42
+43
+check 0
+switch 73
+check 0
+check 4
+44
+45
+46
+47
+check 0
+check 0
+switch 7
+check 0
+check 0
+switch 71
+check 0
+check 4
+72
+73
+74
+75
+check 0
+switch 72
+check 0
+check 4
+76
+77
+78
+79
+check 0
+switch 73
+check 0
+check 4
+80
+81
+82
+83
+check 0
+check 0
+check 0
+check 0
+end_SG
+begin_CG
+27
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+59
+60
+61
+62
+63
+27
+3
+4
+5
+6
+7
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+64
+65
+66
+67
+68
+27
+3
+4
+5
+6
+7
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+69
+70
+71
+72
+73
+15
+0
+1
+2
+8
+9
+10
+25
+26
+27
+42
+43
+44
+59
+64
+69
+12
+0
+1
+2
+11
+12
+28
+29
+45
+46
+60
+65
+70
+12
+0
+1
+2
+11
+12
+28
+29
+45
+46
+60
+65
+70
+48
+0
+1
+2
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+61
+62
+63
+66
+67
+68
+71
+72
+73
+48
+0
+1
+2
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+61
+62
+63
+66
+67
+68
+71
+72
+73
+3
+0
+3
+59
+3
+0
+3
+59
+3
+0
+3
+59
+4
+0
+4
+5
+60
+4
+0
+4
+5
+60
+4
+0
+6
+7
+61
+4
+0
+6
+7
+61
+4
+0
+6
+7
+61
+4
+0
+6
+7
+61
+4
+0
+6
+7
+62
+4
+0
+6
+7
+62
+4
+0
+6
+7
+62
+4
+0
+6
+7
+62
+4
+0
+6
+7
+63
+4
+0
+6
+7
+63
+4
+0
+6
+7
+63
+4
+0
+6
+7
+63
+3
+1
+3
+64
+3
+1
+3
+64
+3
+1
+3
+64
+4
+1
+4
+5
+65
+4
+1
+4
+5
+65
+4
+1
+6
+7
+66
+4
+1
+6
+7
+66
+4
+1
+6
+7
+66
+4
+1
+6
+7
+66
+4
+1
+6
+7
+67
+4
+1
+6
+7
+67
+4
+1
+6
+7
+67
+4
+1
+6
+7
+67
+4
+1
+6
+7
+68
+4
+1
+6
+7
+68
+4
+1
+6
+7
+68
+4
+1
+6
+7
+68
+3
+2
+3
+69
+3
+2
+3
+69
+3
+2
+3
+69
+4
+2
+4
+5
+70
+4
+2
+4
+5
+70
+4
+2
+6
+7
+71
+4
+2
+6
+7
+71
+4
+2
+6
+7
+71
+4
+2
+6
+7
+71
+4
+2
+6
+7
+72
+4
+2
+6
+7
+72
+4
+2
+6
+7
+72
+4
+2
+6
+7
+72
+4
+2
+6
+7
+73
+4
+2
+6
+7
+73
+4
+2
+6
+7
+73
+4
+2
+6
+7
+73
+5
+0
+3
+8
+9
+10
+5
+0
+4
+5
+11
+12
+7
+0
+6
+7
+13
+14
+15
+16
+7
+0
+6
+7
+17
+18
+19
+20
+7
+0
+6
+7
+21
+22
+23
+24
+5
+1
+3
+25
+26
+27
+5
+1
+4
+5
+28
+29
+7
+1
+6
+7
+30
+31
+32
+33
+7
+1
+6
+7
+34
+35
+36
+37
+7
+1
+6
+7
+38
+39
+40
+41
+5
+2
+3
+42
+43
+44
+5
+2
+4
+5
+45
+46
+7
+2
+6
+7
+47
+48
+49
+50
+7
+2
+6
+7
+51
+52
+53
+54
+7
+2
+6
+7
+55
+56
+57
+58
+0
+0
+0
+end_CG
+begin_DTG
+0
+9
+0
+86
+e
+= 74
+2
+3 1 s
+59 0 s
+0
+23
+e
+= 75
+2
+6 1 s
+63 0 s
+0
+59
+e
+= 75
+2
+7 1 s
+63 0 s
+0
+55
+e
+= 75
+2
+7 1 s
+62 0 s
+0
+51
+e
+= 75
+2
+7 1 s
+61 0 s
+0
+19
+e
+= 75
+2
+6 1 s
+62 0 s
+0
+15
+e
+= 75
+2
+6 1 s
+61 0 s
+0
+0
+e
+= 76
+2
+4 1 s
+60 0 s
+0
+7
+e
+= 76
+2
+5 1 s
+60 0 s
+end_DTG
+begin_DTG
+0
+9
+0
+89
+e
+= 74
+2
+3 1 s
+64 0 s
+0
+35
+e
+= 75
+2
+6 1 s
+68 0 s
+0
+71
+e
+= 75
+2
+7 1 s
+68 0 s
+0
+67
+e
+= 75
+2
+7 1 s
+67 0 s
+0
+63
+e
+= 75
+2
+7 1 s
+66 0 s
+0
+31
+e
+= 75
+2
+6 1 s
+67 0 s
+0
+27
+e
+= 75
+2
+6 1 s
+66 0 s
+0
+2
+e
+= 76
+2
+4 1 s
+65 0 s
+0
+9
+e
+= 76
+2
+5 1 s
+65 0 s
+end_DTG
+begin_DTG
+0
+9
+0
+92
+e
+= 74
+2
+3 1 s
+69 0 s
+0
+47
+e
+= 75
+2
+6 1 s
+73 0 s
+0
+83
+e
+= 75
+2
+7 1 s
+73 0 s
+0
+79
+e
+= 75
+2
+7 1 s
+72 0 s
+0
+75
+e
+= 75
+2
+7 1 s
+71 0 s
+0
+43
+e
+= 75
+2
+6 1 s
+72 0 s
+0
+39
+e
+= 75
+2
+6 1 s
+71 0 s
+0
+4
+e
+= 76
+2
+4 1 s
+70 0 s
+0
+11
+e
+= 76
+2
+5 1 s
+70 0 s
+end_DTG
+begin_DTG
+0
+3
+0
+84
+e
+= 74
+2
+0 1 s
+59 0 s
+0
+87
+e
+= 74
+2
+1 1 s
+64 0 s
+0
+90
+e
+= 74
+2
+2 1 s
+69 0 s
+end_DTG
+begin_DTG
+0
+3
+0
+0
+e
+= 76
+2
+0 1 s
+60 0 s
+0
+2
+e
+= 76
+2
+1 1 s
+65 0 s
+0
+4
+e
+= 76
+2
+2 1 s
+70 0 s
+end_DTG
+begin_DTG
+0
+3
+0
+6
+e
+= 76
+2
+0 1 s
+60 0 s
+0
+8
+e
+= 76
+2
+1 1 s
+65 0 s
+0
+10
+e
+= 76
+2
+2 1 s
+70 0 s
+end_DTG
+begin_DTG
+0
+9
+0
+39
+e
+= 75
+2
+2 1 s
+71 0 s
+0
+31
+e
+= 75
+2
+1 1 s
+67 0 s
+0
+32
+e
+= 75
+2
+1 1 s
+68 0 s
+0
+40
+e
+= 75
+2
+2 1 s
+72 0 s
+0
+44
+e
+= 75
+2
+2 1 s
+73 0 s
+0
+21
+e
+= 75
+2
+0 1 s
+63 0 s
+0
+13
+e
+= 75
+2
+0 1 s
+61 0 s
+0
+16
+e
+= 75
+2
+0 1 s
+62 0 s
+0
+24
+e
+= 75
+2
+1 1 s
+66 0 s
+end_DTG
+begin_DTG
+0
+9
+0
+75
+e
+= 75
+2
+2 1 s
+71 0 s
+0
+67
+e
+= 75
+2
+1 1 s
+67 0 s
+0
+68
+e
+= 75
+2
+1 1 s
+68 0 s
+0
+76
+e
+= 75
+2
+2 1 s
+72 0 s
+0
+80
+e
+= 75
+2
+2 1 s
+73 0 s
+0
+57
+e
+= 75
+2
+0 1 s
+63 0 s
+0
+49
+e
+= 75
+2
+0 1 s
+61 0 s
+0
+52
+e
+= 75
+2
+0 1 s
+62 0 s
+0
+60
+e
+= 75
+2
+1 1 s
+66 0 s
+end_DTG
+begin_DTG
+0
+1
+0
+84
+e
+= 74
+3
+0 1 s
+3 1 s
+59 0 s
+end_DTG
+begin_DTG
+0
+1
+0
+85
+e
+= 74
+3
+0 1 s
+3 1 s
+59 0 s
+end_DTG
+begin_DTG
+0
+1
+0
+86
+e
+= 74
+3
+0 1 s
+3 1 s
+59 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+0
+e
+= 76
+3
+0 1 s
+4 1 s
+60 0 s
+0
+6
+e
+= 76
+3
+0 1 s
+5 1 s
+60 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+1
+e
+= 76
+3
+0 1 s
+4 1 s
+60 0 s
+0
+7
+e
+= 76
+3
+0 1 s
+5 1 s
+60 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+12
+e
+= 75
+3
+0 1 s
+6 1 s
+61 0 s
+0
+48
+e
+= 75
+3
+0 1 s
+7 1 s
+61 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+13
+e
+= 75
+3
+0 1 s
+6 1 s
+61 0 s
+0
+49
+e
+= 75
+3
+0 1 s
+7 1 s
+61 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+14
+e
+= 75
+3
+0 1 s
+6 1 s
+61 0 s
+0
+50
+e
+= 75
+3
+0 1 s
+7 1 s
+61 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+15
+e
+= 75
+3
+0 1 s
+6 1 s
+61 0 s
+0
+51
+e
+= 75
+3
+0 1 s
+7 1 s
+61 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+16
+e
+= 75
+3
+0 1 s
+6 1 s
+62 0 s
+0
+52
+e
+= 75
+3
+0 1 s
+7 1 s
+62 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+17
+e
+= 75
+3
+0 1 s
+6 1 s
+62 0 s
+0
+53
+e
+= 75
+3
+0 1 s
+7 1 s
+62 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+18
+e
+= 75
+3
+0 1 s
+6 1 s
+62 0 s
+0
+54
+e
+= 75
+3
+0 1 s
+7 1 s
+62 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+19
+e
+= 75
+3
+0 1 s
+6 1 s
+62 0 s
+0
+55
+e
+= 75
+3
+0 1 s
+7 1 s
+62 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+20
+e
+= 75
+3
+0 1 s
+6 1 s
+63 0 s
+0
+56
+e
+= 75
+3
+0 1 s
+7 1 s
+63 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+21
+e
+= 75
+3
+0 1 s
+6 1 s
+63 0 s
+0
+57
+e
+= 75
+3
+0 1 s
+7 1 s
+63 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+22
+e
+= 75
+3
+0 1 s
+6 1 s
+63 0 s
+0
+58
+e
+= 75
+3
+0 1 s
+7 1 s
+63 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+23
+e
+= 75
+3
+0 1 s
+6 1 s
+63 0 s
+0
+59
+e
+= 75
+3
+0 1 s
+7 1 s
+63 0 s
+end_DTG
+begin_DTG
+0
+1
+0
+87
+e
+= 74
+3
+1 1 s
+3 1 s
+64 0 s
+end_DTG
+begin_DTG
+0
+1
+0
+88
+e
+= 74
+3
+1 1 s
+3 1 s
+64 0 s
+end_DTG
+begin_DTG
+0
+1
+0
+89
+e
+= 74
+3
+1 1 s
+3 1 s
+64 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+2
+e
+= 76
+3
+1 1 s
+4 1 s
+65 0 s
+0
+8
+e
+= 76
+3
+1 1 s
+5 1 s
+65 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+3
+e
+= 76
+3
+1 1 s
+4 1 s
+65 0 s
+0
+9
+e
+= 76
+3
+1 1 s
+5 1 s
+65 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+24
+e
+= 75
+3
+1 1 s
+6 1 s
+66 0 s
+0
+60
+e
+= 75
+3
+1 1 s
+7 1 s
+66 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+25
+e
+= 75
+3
+1 1 s
+6 1 s
+66 0 s
+0
+61
+e
+= 75
+3
+1 1 s
+7 1 s
+66 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+26
+e
+= 75
+3
+1 1 s
+6 1 s
+66 0 s
+0
+62
+e
+= 75
+3
+1 1 s
+7 1 s
+66 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+27
+e
+= 75
+3
+1 1 s
+6 1 s
+66 0 s
+0
+63
+e
+= 75
+3
+1 1 s
+7 1 s
+66 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+28
+e
+= 75
+3
+1 1 s
+6 1 s
+67 0 s
+0
+64
+e
+= 75
+3
+1 1 s
+7 1 s
+67 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+29
+e
+= 75
+3
+1 1 s
+6 1 s
+67 0 s
+0
+65
+e
+= 75
+3
+1 1 s
+7 1 s
+67 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+30
+e
+= 75
+3
+1 1 s
+6 1 s
+67 0 s
+0
+66
+e
+= 75
+3
+1 1 s
+7 1 s
+67 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+31
+e
+= 75
+3
+1 1 s
+6 1 s
+67 0 s
+0
+67
+e
+= 75
+3
+1 1 s
+7 1 s
+67 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+32
+e
+= 75
+3
+1 1 s
+6 1 s
+68 0 s
+0
+68
+e
+= 75
+3
+1 1 s
+7 1 s
+68 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+33
+e
+= 75
+3
+1 1 s
+6 1 s
+68 0 s
+0
+69
+e
+= 75
+3
+1 1 s
+7 1 s
+68 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+34
+e
+= 75
+3
+1 1 s
+6 1 s
+68 0 s
+0
+70
+e
+= 75
+3
+1 1 s
+7 1 s
+68 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+35
+e
+= 75
+3
+1 1 s
+6 1 s
+68 0 s
+0
+71
+e
+= 75
+3
+1 1 s
+7 1 s
+68 0 s
+end_DTG
+begin_DTG
+0
+1
+0
+90
+e
+= 74
+3
+2 1 s
+3 1 s
+69 0 s
+end_DTG
+begin_DTG
+0
+1
+0
+91
+e
+= 74
+3
+2 1 s
+3 1 s
+69 0 s
+end_DTG
+begin_DTG
+0
+1
+0
+92
+e
+= 74
+3
+2 1 s
+3 1 s
+69 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+4
+e
+= 76
+3
+2 1 s
+4 1 s
+70 0 s
+0
+10
+e
+= 76
+3
+2 1 s
+5 1 s
+70 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+5
+e
+= 76
+3
+2 1 s
+4 1 s
+70 0 s
+0
+11
+e
+= 76
+3
+2 1 s
+5 1 s
+70 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+36
+e
+= 75
+3
+2 1 s
+6 1 s
+71 0 s
+0
+72
+e
+= 75
+3
+2 1 s
+7 1 s
+71 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+37
+e
+= 75
+3
+2 1 s
+6 1 s
+71 0 s
+0
+73
+e
+= 75
+3
+2 1 s
+7 1 s
+71 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+38
+e
+= 75
+3
+2 1 s
+6 1 s
+71 0 s
+0
+74
+e
+= 75
+3
+2 1 s
+7 1 s
+71 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+39
+e
+= 75
+3
+2 1 s
+6 1 s
+71 0 s
+0
+75
+e
+= 75
+3
+2 1 s
+7 1 s
+71 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+40
+e
+= 75
+3
+2 1 s
+6 1 s
+72 0 s
+0
+76
+e
+= 75
+3
+2 1 s
+7 1 s
+72 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+41
+e
+= 75
+3
+2 1 s
+6 1 s
+72 0 s
+0
+77
+e
+= 75
+3
+2 1 s
+7 1 s
+72 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+42
+e
+= 75
+3
+2 1 s
+6 1 s
+72 0 s
+0
+78
+e
+= 75
+3
+2 1 s
+7 1 s
+72 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+43
+e
+= 75
+3
+2 1 s
+6 1 s
+72 0 s
+0
+79
+e
+= 75
+3
+2 1 s
+7 1 s
+72 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+44
+e
+= 75
+3
+2 1 s
+6 1 s
+73 0 s
+0
+80
+e
+= 75
+3
+2 1 s
+7 1 s
+73 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+45
+e
+= 75
+3
+2 1 s
+6 1 s
+73 0 s
+0
+81
+e
+= 75
+3
+2 1 s
+7 1 s
+73 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+46
+e
+= 75
+3
+2 1 s
+6 1 s
+73 0 s
+0
+82
+e
+= 75
+3
+2 1 s
+7 1 s
+73 0 s
+end_DTG
+begin_DTG
+0
+2
+0
+47
+e
+= 75
+3
+2 1 s
+6 1 s
+73 0 s
+0
+83
+e
+= 75
+3
+2 1 s
+7 1 s
+73 0 s
+end_DTG
+begin_DTG
+1
+1
+84
+e
+= 74
+3
+0 1 s
+3 1 s
+59 0 s
+0
+end_DTG
+begin_DTG
+2
+1
+0
+e
+= 76
+3
+0 1 s
+4 1 s
+60 0 s
+1
+6
+e
+= 76
+3
+0 1 s
+5 1 s
+60 0 s
+0
+end_DTG
+begin_DTG
+2
+1
+12
+e
+= 75
+3
+0 1 s
+6 1 s
+61 0 s
+1
+48
+e
+= 75
+3
+0 1 s
+7 1 s
+61 0 s
+0
+end_DTG
+begin_DTG
+2
+1
+16
+e
+= 75
+3
+0 1 s
+6 1 s
+62 0 s
+1
+52
+e
+= 75
+3
+0 1 s
+7 1 s
+62 0 s
+0
+end_DTG
+begin_DTG
+2
+1
+20
+e
+= 75
+3
+0 1 s
+6 1 s
+63 0 s
+1
+56
+e
+= 75
+3
+0 1 s
+7 1 s
+63 0 s
+0
+end_DTG
+begin_DTG
+1
+1
+87
+e
+= 74
+3
+1 1 s
+3 1 s
+64 0 s
+0
+end_DTG
+begin_DTG
+2
+1
+2
+e
+= 76
+3
+1 1 s
+4 1 s
+65 0 s
+1
+8
+e
+= 76
+3
+1 1 s
+5 1 s
+65 0 s
+0
+end_DTG
+begin_DTG
+2
+1
+24
+e
+= 75
+3
+1 1 s
+6 1 s
+66 0 s
+1
+60
+e
+= 75
+3
+1 1 s
+7 1 s
+66 0 s
+0
+end_DTG
+begin_DTG
+2
+1
+28
+e
+= 75
+3
+1 1 s
+6 1 s
+67 0 s
+1
+64
+e
+= 75
+3
+1 1 s
+7 1 s
+67 0 s
+0
+end_DTG
+begin_DTG
+2
+1
+32
+e
+= 75
+3
+1 1 s
+6 1 s
+68 0 s
+1
+68
+e
+= 75
+3
+1 1 s
+7 1 s
+68 0 s
+0
+end_DTG
+begin_DTG
+1
+1
+90
+e
+= 74
+3
+2 1 s
+3 1 s
+69 0 s
+0
+end_DTG
+begin_DTG
+2
+1
+4
+e
+= 76
+3
+2 1 s
+4 1 s
+70 0 s
+1
+10
+e
+= 76
+3
+2 1 s
+5 1 s
+70 0 s
+0
+end_DTG
+begin_DTG
+2
+1
+36
+e
+= 75
+3
+2 1 s
+6 1 s
+71 0 s
+1
+72
+e
+= 75
+3
+2 1 s
+7 1 s
+71 0 s
+0
+end_DTG
+begin_DTG
+2
+1
+40
+e
+= 75
+3
+2 1 s
+6 1 s
+72 0 s
+1
+76
+e
+= 75
+3
+2 1 s
+7 1 s
+72 0 s
+0
+end_DTG
+begin_DTG
+2
+1
+44
+e
+= 75
+3
+2 1 s
+6 1 s
+73 0 s
+1
+80
+e
+= 75
+3
+2 1 s
+7 1 s
+73 0 s
+0
+end_DTG
+begin_DTG
+0
+end_DTG
+begin_DTG
+0
+end_DTG
+begin_DTG
+0
+end_DTG

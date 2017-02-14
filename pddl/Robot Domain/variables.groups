@@ -1,0 +1,71 @@
+var0
+   0: Atom at(<machine1>, <l1>)
+   1: <none of those>
+var1
+   0: Atom at(<machine2>, <l2>)
+   1: <none of those>
+var2
+   0: Atom at(<machine3>, <l3>)
+   1: <none of those>
+var3
+   0: Atom at(<robot1>, <l1>)
+   1: <none of those>
+var4
+   0: Atom at(<robot1>, <l2>)
+   1: <none of those>
+var5
+   0: Atom at(<robot1>, <l3>)
+   1: <none of those>
+var6
+   0: Atom at(<robot2>, <l1>)
+   1: <none of those>
+var7
+   0: Atom at(<robot2>, <l2>)
+   1: <none of those>
+var8
+   0: Atom at(<robot2>, <l3>)
+   1: <none of those>
+var9
+   0: Atom busy(<robot1>)
+   1: <none of those>
+var10
+   0: Atom busy(<robot2>)
+   1: <none of those>
+var11
+   0: Atom gripper-free(<robot1>)
+   1: <none of those>
+var12
+   0: Atom gripper-free(<robot2>)
+   1: <none of those>
+var13
+   0: Atom loading-tray-free(<machine1>)
+   1: <none of those>
+var14
+   0: Atom loading-tray-free(<machine2>)
+   1: <none of those>
+var15
+   0: Atom loading-tray-free(<machine3>)
+   1: <none of those>
+var16
+   0: Atom occupied(<l1>)
+   1: <none of those>
+var17
+   0: Atom occupied(<l2>)
+   1: <none of those>
+var18
+   0: Atom occupied(<l3>)
+   1: <none of those>
+var19
+   0: Atom output-available(<machine1>)
+   1: <none of those>
+var20
+   0: Atom output-available(<machine2>)
+   1: <none of those>
+var21
+   -2: PNE derived!1()
+var22
+   -2: PNE derived!2()
+var23
+   -2: PNE derived!3()
+var24
+   -2: PNE derived!4()
