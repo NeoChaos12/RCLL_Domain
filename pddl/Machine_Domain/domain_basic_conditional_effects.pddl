@@ -28,11 +28,16 @@
 	green - ring_color
 	black - cap_color
 	white - cap_color
+	m_bs - bs
+	m_rs1 - rs
+	m_rs2 - rs
+	m_cs1 - cs
+	m_cs2 - cs
     )
 
     (:predicates
-        (has-color ?p - product ?a - attribute ?c - color)
-	(is-empty ?p - product ?a - attribute)
+        ;(has-color ?p - product ?a - attribute ?c - color)
+	;(is-empty ?p - product ?a - attribute)
 	(being-processed ?p - product)
 	(busy ?m - machine)
 	(cap-loaded ?m - cs)
@@ -40,10 +45,37 @@
 	(base-available ?m - machine)
 	(contains-color ?m - machine ?c - color)
 	(is-at ?o - locatable ?l - location)
+	(product-initialized ?p - product)
+	(has-base ?p - product)
+	(has-ring1 ?p - product)
+	(has-ring2 ?p - product)
+	(has-cap ?p - product)
+	(color-of-base ?p - product ?c - base_color)
+	(color-of-ring1 ?p - product ?c - ring_color)
+	(color-of-ring2 ?p - product ?c - ring_color)
+	(color-of-cap ?p - product ?c - cap_color)
     )
 
     (:functions
 
+    )
+
+    (:durative-action initialize-product
+	:parameters (?p - product)
+	:duration (= ?duration 0.1)
+	:condition (and
+		(at start (not (product-initialized ?p)))
+		(at start (not (busy m_bs)))
+		(at start (not (being-processed ?p)))
+	)
+	:effect (and
+		(at start (busy m_bs))
+		(at start (being-processed ?p))
+		(at end (not (busy m_bs)))
+		(at end (not (being-processed ?p)))
+		(at end (product-initialized ?p))
+		(at end (is-at ?p m_bs))
+	)
     )
 
     (:durative-action move-product
@@ -68,22 +100,23 @@
     )
 
     (:durative-action retrieve-base
-        :parameters (?m - bs ?p - product ?b - base ?c - base_color)
+        :parameters (?p - product ?c - base_color)
         :duration (= ?duration 1)
         :condition (and
-		(at start (not (busy ?m)))
-		(at start (is-empty ?p ?b))
+		(at start (not (busy bm)))
 		(at start (not (being-processed ?p)))
-		(at start (is-at ?p ?m))
-		(at end (is-at ?p ?m))
+		(at start (is-at ?p bm))
+		(at start (product-initialized ?p))
+		(at start (not (has-base ?p)))
+		(at end (is-at ?p bm))
         )
         :effect (and 
-		(at start (busy ?m))
+		(at start (busy bm))
 		(at start (being-processed ?p))
-		(at end (not (busy ?m)))
+		(at end (not (busy bm)))
 		(at end (not (being-processed ?p)))
-		(at end (not (is-empty ?p ?b)))
-		(at end (has-color ?p ?b ?c))
+		(at end (has-base ?p))
+		(at end (color-of-base ?p ?c))
         )
     )
 
@@ -102,15 +135,21 @@
     )
 
     (:durative-action mount-ring
-        :parameters (?m - rs ?p - product ?r - ring ?c - ring_color)
+        :parameters (?m - rs ?p - product ?c - ring_color)
         :duration (= ?duration 0.5)
         :condition (and
 		(at start (not (busy ?m)))
-		(at start (is-empty ?p ?r))
 		(at start (not (being-processed ?p)))
 		(at start (ring-loaded ?m ?c))
 		(at start (contains-color ?m ?c))
 		(at start (is-at ?p ?m))
+		(at start (or 
+			(has-base ?p)
+			(has-ring1 ?p)
+			)
+		)
+		(at start (not (has-ring2 ?p)))
+		(at start (not (has-cap ?p)))
 		(at end (is-at ?p ?m))
         )
         :effect (and 
@@ -118,48 +157,22 @@
 		(at start (being-processed ?p))
 		(at end (not (busy ?m)))
 		(at end (not (being-processed ?p)))
-		(at end (not (is-empty ?p ?r)))
-		(at end (has-color ?p ?r ?c))
+		(when (at start (has-ring1 ?p))
+			(and 
+				(at end (has-ring2 ?p))
+				(at end (color-of-ring2 ?p ?c))
+			)
+		)
+		(when (at start (not (has-ring1 ?p)))
+			(and
+				(at end (has-ring1 ?p))
+				(at end (color-of-ring2 ?p ?c))
+			)
+		)
 		(at end (not (ring-loaded ?m ?c)))
         )
     )
 
-    (:durative-action load-cap-from-shelf
-        :parameters (?m - cs)
-        :duration (= ?duration 0.25)
-        :condition (and
-		(at start (not (busy ?m)))
-		(at start (not (cap-loaded ?m)))
-        )
-        :effect (and 
-		(at start (busy ?m))
-		(at end (not (busy ?m)))
-		(at end (cap-loaded ?m))
-        )
-    )
-
-    (:durative-action mount-cap
-        :parameters (?m - cs ?p - product ?pc - cap ?c - cap_color)
-        :duration (= ?duration 0.75)
-        :condition (and
-		(at start (not (busy ?m)))
-		(at start (is-empty ?p ?pc))
-		(at start (not (being-processed ?p)))
-		(at start (cap-loaded ?m))
-		(at start (contains-color ?m ?c))
-		(at start (is-at ?p ?m))
-		(at end (is-at ?p ?m))
-        )
-        :effect (and 
-		(at start (busy ?m))
-		(at start (being-processed ?p))
-		(at end (not (busy ?m)))
-		(at end (not (being-processed ?p)))
-		(at end (not (is-empty ?p ?pc)))
-		(at end (has-color ?p ?pc ?c))
-		(at end (not (cap-loaded ?m)))
-        )
-    )
 )
 
 
