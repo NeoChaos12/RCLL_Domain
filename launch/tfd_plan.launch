@@ -4,7 +4,7 @@
    <arg name="problem" default="$(find rcll_domain)/pddl/Machine_Domain/p01-test.pddl" />
 
    <node pkg="tfd_modules" type="tfd_plan" name="tfd_plan" args="$(arg domain) $(arg problem)" required="true">
-      <rosparam command="load" file="$(find tfd_modules)/config/tfd_modules_params.yaml" />
+      <rosparam command="load" file="$(find rcll_domain)/config/tfd_modules_params.yaml" />
    </node>
 
 </launch>
